@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './components/Home.jsx'
+import Home from './components/pages/Home.jsx'
 import SignUp from './components/SignUp.jsx'
 import AuthLayout from "./components/AuthLayout.jsx"
 import { Provider } from 'react-redux'
@@ -12,6 +12,7 @@ import SigninForm from './components/_auth/signinForm.jsx'
 import PostForm from './components/post/PostForm.jsx'
 import Post from "./components/pages/Post.jsx"
 import AllPosts from './components/pages/AllPosts.jsx'
+import Cart from './components/Cart.jsx'
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,15 @@ const router = createBrowserRouter([
             <AuthLayout authentication>
                 {" "}
                 <AllPosts />
+            </AuthLayout>
+        ),
+      },
+      {
+        path: "/Cart",
+        element: (
+            <AuthLayout authentication>
+                {" "}
+                <Cart />
             </AuthLayout>
         ),
       },

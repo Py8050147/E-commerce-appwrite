@@ -35,12 +35,17 @@ function Header() {
       name: "postForm",
       slug: "/postForm",
       active: authStatus,
+    },
+    {
+      name: "Cart",
+      slug: "/cart",
+      active: authStatus,
   },
   ]
   return (
-    <header className='py-3 shadow bg-gray-500  '>
-        <nav className='flex'>
-          <div className='mr-4 '>
+    <header className=' py-3 shadow bg-gray-500 '>
+        <nav className='w-full max-w-7xl mx-auto flex'>
+          <div className='mr-5'>
             <Link to='/'>
             <h1>E-cart</h1>
             </Link>

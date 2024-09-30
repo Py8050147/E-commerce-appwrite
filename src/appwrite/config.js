@@ -35,7 +35,7 @@ export class Service {
         description,
         price,
         slug,
-        stock,
+        // stock,
         productImg,
         status,
         userId
@@ -49,7 +49,7 @@ export class Service {
                     title,
                     description,
                     price,
-                    stock,
+                    // stock,
                     productImg,
                     status,
                     userId
